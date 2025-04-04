@@ -1,6 +1,6 @@
 ## Rehearsal Structure Analysis Examples
 
-To support the manuscript (and in addition to the [technical appendix](./technical_appendix.pdf)), we share:
+To support the manuscript, we share:
 
 1. 3 of the 5 annotated file examples (+details), analysis insights, and results of applying the proposed approach for finding related fragments in a rehearsal. (The full set to be made available after publication. 
 
@@ -12,19 +12,13 @@ To support the manuscript (and in addition to the [technical appendix](./technic
 Each annotation is provided as a midi file:
 - track 0 is the performance.
 - tracks 1-n are for the annotations of related fragment groups
-    - each track includes the intervals of a group, where each interval is represented by the span of a midi note (24)
+    - each track includes the intervals of a group, where each interval is represented by the span of midi note #24
  
 Although based on rehearsal files from the < Anonymized > MIDI dataset, they are all constructed to demonstrate interesting examples of what we consider equivalent musical fragments. 
 Annotations were made using logic pro. 
 
 #### Example Annotation Files
 
-For each annotation file, a page is included with: 
-- pianoroll plots with the time intervals of the annotated groups marked.
-
-- Analysis insights of the phases of rehearsal segmentation pipeline phases described in the manuscript (for exact details, please refer to the [technical appendix](./technical_appendix.pdf))
-  
-2. Result of the diagonal finding phase. 
 | File | Num Groups | Download | Annot. and Results Info |
 |-----------|-------------|----------|-------------|
 | Mozart Variations   | 2 | [MIDI](./annotated_files/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./mozart_var_annotation_details.md)|
@@ -32,9 +26,16 @@ For each annotation file, a page is included with:
 |  PonceGav  |  6  | [MIDI](./annotated_files/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./ponce_gav_annotation_details.md)|
 |  Warmup  |  8  | [MIDI](./annotated_files/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./warmup_file_annotation_details.md)|
 
+For each annotation file, a page is included with: 
+- pianoroll plots with the time intervals of the annotated groups marked.
+
+- Analysis insights of the phases of rehearsal segmentation pipeline phases described in the manuscript (for exact details, please refer to the [technical appendix](./technical_appendix.pdf))
+  
+- Selected Results
+
 
 ### Additional Analysis on Unannotated files
-Comparision between results on consecutive takes of the same piece
+Comparision between results on 3 temporally spaced rehersals of Rapsodia Mexicana No.~2 by Manuel Ponce. (TBD)
   
 
 
