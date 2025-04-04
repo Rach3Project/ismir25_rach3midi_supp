@@ -14,3 +14,9 @@ This dataset records the progression of pianists learning new repertoire, as wel
 This paper further introduces possible avenues of using this dataset for the computational analysis of piano practice such as rehearsal structure analysis, rehearsal-to-score alignment and mistake identification.
 We also discuss the challenges and limitations of using state of the art methods for piano performance analysis for this type of data.
 In addition, we provide the code that was used to preprocess and analyze the recorded rehearsals.
+
+
+### Resources
+- Analysis insights of the phases of rehearsal segmentation pipeline phases described in the manuscript (for exact details, please refer to the [technical annex](./technical_annex.pdf))
+
+- For the annotated examples, and rehearsal structure analysis pipeline phases described in the manuscript (for exact details, please refer to [Re](./technical_appendix.pdf))
