@@ -17,6 +17,7 @@ In addition, we provide the code that was used to preprocess and analyze the rec
 
 
 ### Resources
-- Analysis insights of the phases of rehearsal segmentation pipeline phases described in the manuscript (for exact details, please refer to the [technical annex](./technical_annex.pdf))
 
-- For the annotated examples, and rehearsal structure analysis pipeline phases described in the manuscript (for exact details, please refer to [Re](./technical_appendix.pdf))
+- For detailed information about the Fingerprinting and Rehearsal Structure Analysis algorithms, please refer to the [technical annex](./technical_annex.pdf)
+
+- For annotations and results of the Rehearsal Structure Analysis pipeline phases, please refer to the [Rehearsal Structure Analysis](./rsa_info.md) section.
