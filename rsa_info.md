@@ -27,10 +27,10 @@ For each annotation file, a page is included with:
 2. Result of the diagonal finding phase. 
 | File | Num Groups | Download | Annot. and Results Info |
 |-----------|-------------|----------|-------------|
-| Mozart Variations   | 2 | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/figures/mozart_var_annotation_details.md)|
-|  Ponce20Can  |  6  | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/figures/ponce_can_annotation_details.md)|
-|  PonceGav  |  6  | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/figures/ponce_gav_annotation_details.md)|
-|  Warmup  |  8  | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/figures/warmup_file_annotation_details.md)|
+| Mozart Variations   | 2 | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/mozart_var_annotation_details.md)|
+|  Ponce20Can  |  6  | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/ponce_can_annotation_details.md)|
+|  PonceGav  |  6  | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/ponce_gav_annotation_details.md)|
+|  Warmup  |  8  | [MIDI](./rsa_resources/example_annot/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid) |[Info and Results](./rsa_resources/warmup_file_annotation_details.md)|
 
 
 ### Additional Analysis on Unannotated files
