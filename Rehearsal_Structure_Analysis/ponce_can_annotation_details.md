@@ -11,30 +11,14 @@
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/ponce20can_group1.png" width="250px" alt="">
+        <img src="./figures/ponce_can/ponce20can_group1.png" width="500px" alt="">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/ponce20can_group2.png" width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group3.png"width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group4.png" width="250px" alt="">
+        <img src="./figures/ponce_can/ponce20can_group2.png" width="500px" alt="">
       </a>
       <br>
       <em></em>
@@ -43,14 +27,30 @@
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/ponce20can_group5.png" width="250px" alt="">
+        <img src="./figures/ponce_can/ponce20can_group3.png"width="500px" alt="">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/ponce20can_group6.png" width="250px" alt="">
+        <img src="./figures/ponce_can/ponce20can_group4.png" width="500px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/ponce20can_group5.png" width="500px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/ponce20can_group6.png" width="500px" alt="">
       </a>
       <br>
       <em></em>
