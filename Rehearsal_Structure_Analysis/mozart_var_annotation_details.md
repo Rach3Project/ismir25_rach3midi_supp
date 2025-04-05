@@ -1,6 +1,7 @@
 
 ### Annotation File 1
 - **Filename**: 02_2024-08-02_Mozart_Var_constructed_annot.mid
+- **Download**: [MIDI](./annotated_files/02_2024-08-02_Mozart_Var/02_2024-08-02_Mozart_Var_constructed_annot.mid)
 - **Groups**: 2
 - **Description**:
 This example is the shortest and most straightforward from the annotated set. It is constructed from a rehearsal of Mozart’s Twelve
@@ -60,7 +61,7 @@ We keep the fragments part of the same group because the goal is to allow for no
   
 </table>
 
-### Similarity Matrixes of inter-group fragment pairs
+### Similarity Matrixes of intra-group fragment pairs
 The tick indexes reflect the bin numbers within the SSM of the whole rehearsal. 
 
 <table>
@@ -103,16 +104,18 @@ The tick indexes reflect the bin numbers within the SSM of the whole rehearsal.
 The light blue lines indicate the diagonals found using:
 - minimum length = 10
 - gap tolerance = 5
-- similarity threshold = 0.2 
+- similarity threshold = 0.2
+
+The green lines represent group2 intervals, which we show to demonstrate the aforementioned challenges of this group specifically and how it affects the results. The intersections of the green lines is where we would (ideally) want to find a diagonal.
 
 
-![preview](./figures/mozart_var/mozart_var_diagonalsearch_10-0-2_5.png)
+![preview](./figures/mozart_var/mozart_var_diagonalsearch_group2annot_10_0-2_5.png)
 
 
 - For group 0:
 3 long diags with enough coverage 
 however, another diagonal subset is included which will likely lead to an irrelevant grouping, (the 3 short diagonals at the bottom). 
-It could be avoided by increasing the minimum length parameter, or for it to be later discarded based on a round of filtering using music similarity once the diagonals are chopped. 
+It could be avoided by increasing the minimum length parameter, or for it to be later discarded later based on improved filtering approaches. 
 
 - As for group 1, there are 5 diagonals we would have wanted to find, only 2 of which actually have diagonals. The trille example
 The example with the trille will be impossible to get a proper diagonal for. Not only is the number of events different, which makes the diagonal non exact even if the endings would be the same. and the notes are different (it is not repetition of the same note) [this is mozart var group 2 - 1 and 2
