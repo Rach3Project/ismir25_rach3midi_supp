@@ -72,7 +72,7 @@
 - Groups 5 and 6 have similar traits as group 4. 
 
 ### Similarity Matrixes of intra-group fragment pairs
-The tick indexes reflect the bin numbers within the SSM of the whole rehearsal. 
+The tick indices reflect the bin numbers within the SSM of the whole rehearsal. 
 
 <table>
   <tr>
@@ -111,37 +111,21 @@ The tick indexes reflect the bin numbers within the SSM of the whole rehearsal.
 
 #### Diagonal Finding:
 
-For the diagonal finding approach to pick all necessary diagonals for further grouping and filtering, there needs to be a balance between the following tradeoffs:
+For the diagonal finding approach to pick all necessary diagonals for further grouping and filtering, our initial hypothesis is that there needs to be a balance between the following tradeoffs:
 
 - Groups 1, 2, and 3 need shorter min_length settings
 - Groups 4, 5, and 6 could rely on longer minimum length settings, although shorter settings could also help in identifying the smaller shifted diagonals for later grouping.
 
 The light blue lines indicate the diagonals found using:
 - minimum length = 10
-- gap tolerance = 10
+- gap tolerance = 5 (gap tolerance must be less than min length)
 - similarity threshold = 0.2
 
-
-
 <table>
   <tr>
     <td align="center" width="70%">
-      <a href="./figures/ponce_can/ponce20can_diagonallengthdistro_10_0-2_10.png">
-        <img src="./figures/ponce_can/ponce2-can_diagonalfinding_10_0-2_10.png" width="600 px" alt="Diagonal Length Distribution">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-</table>
-
-This yields a very high number of short diagonals, far surpassing the number of fragments and groups in our annotations. We see an exaggerated number of diagonals is found at the minimum length setting.
-
-<table>
-  <tr>
-    <td align="center" width="70%">
-      <a href="./figures/ponce_can/ponce20can_diagonallengthdistro_10_0-2_10.png">
-        <img src="./figures/ponce_can/ponce20can_diagonallengthdistro_10_0-2_10.png" width="400 px" alt="Diagonal Length Distribution">
+      <a href=./figures/ponce_can/diagonalsearch_10_0-2_5.png">
+        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5.png" width="600 px" alt="Diagonal Search">
       </a>
       <br>
       <em></em>
@@ -152,30 +136,288 @@ This yields a very high number of short diagonals, far surpassing the number of 
 
 <table>
   <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="250px" alt="">
+    <td align="center" width="70%">
+      <a href="./figures/ponce_can/ponce20can_diagonaldist_10_0-2_5.png">
+        <img src="./figures/ponce_can/ponce20can_diagonaldist_10_0-2_5.png" width="400 px" alt="Diagonal Length Distribution">
       </a>
       <br>
       <em></em>
     </td>
+  </tr>
+</table>
+
+One way to understand the effectiveness of these settings is to see how the diagonals relate to the retrieval of group information. Below are the self similarity matrixes overlayed with interval information and the retrieved set of diagonals above. The intersection between the green horizontal and vertical rectangles represents the similarity matrix between 2 intervals of that group (for example, one of such intersections would a similarity matrix as shown for the intra-group fragment pairs above)
+
+<table>
+  <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="" width="250px" alt="">
+        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group1.png" width="450px" alt="">
       </a>
       <br>
-      <em></em>
+      <em>Group 1</em>
+    </td>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group2.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 2</em>
     </td>
   </tr>
     <tr>
     <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group3.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 3</em>
+    </td>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group4.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 4</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group5.png" width="450px" alt="">
+      </a>
+      <br>
+      <em>Group 5</em>
+    </td>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group6.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 6</em>
+    </td>
+</table>
+
+As the only information passed to the interval grouping and merging are the the diagonals found in this search, from the plots above we can see the following:
+- As initially thought, this search does not yield enough diagonals in the intersecting boxes of the first 3 groups.
+- For the last 3 groups it would be possible to postprocess this search meaningfully, although the recall is also not perfect. 
+
+The diagonal breaks referred to in the zoomed-in similarity matrixes of intra group pairs can be seen for the last 3 groups. 
+
+However, as the only information passed to the interval grouping and merging are the the diagonals found in this search. 
+
+In contrast, we use different settings and observe their effect:
+
+- minimum length = 7
+- gap tolerance = 4 (gap tolerance must be less than min length)
+- similarity threshold = 0.15
+
+
+<table>
+  <tr>
+    <td align="center" width="70%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4.png" width="600 px" alt="Diagonal Length Distribution">
+      </a>
+      <br>
+      <em></em>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center" width="70%">
+      <a href="./figures/ponce_can/diagonaldist_7_0-15_4.png">
+        <img src="./figures/ponce_can/diagonaldist_7_0-15_4.png" width="400 px" alt="Diagonal Length Distribution">
+      </a>
+      <br>
+      <em></em>
+    </td>
+  </tr>
+</table>
+
+This is the observed effect on the groups
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group1.png" width="450px" alt="">
+      </a>
+      <br>
+      <em>Group 1</em>
+    </td>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group2.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 2</em>
+    </td>
+  </tr>
+    <tr>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group3.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 3</em>
+    </td>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group4.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 4</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group5.png" width="450px" alt="">
+      </a>
+      <br>
+      <em>Group 5</em>
+    </td>
+    <td align="center" width="50%">
+      <a href="">
+        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group6.png" width="450px" alt="">
+      </a>
+      <br>
+      <em> Group 6</em>
+    </td>
+
+</table>
+
+There are several things to note:
+
+- These settings mean that we want to retrieve diagonals of length 7 permitting up to 4 mismatches. This is too permissive to apply for certain types of compositions which would involve periodically repeating bins.
+
+- Furthermore, despite being permissive settings, they still do not perfectly retrieve peaks in the intersections of groups 1, 2 and 3. However, this is likely the effect of grouping intervals that are variations of one another, where even in the case of perfect matches there would be variations between bins (let alone mistakes or repetitions).
+
+- However, the short diagonals from these settings would allow some information pertaining to the first 3 groups to be passed to the next pipeline phases. 
+
+
+### Grouping and Merging
+As shown in the technical appendix, the found diagonals are grouped based on horizontal and vertical overlaps, followed by a final merging phase is simply to merge the horizontal and vertical groups based on overlapping diagonals. 
+
+Examples of diagonal length distributions based on multiple settings (interval_overlap_ratio = 0.85)
+
+<table>
+  <tr>
+    <td align="center" width="10%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em>params</em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em>horizontal</em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em>vertical </em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em>merged</em>
+    </td>
+  </tr>
+    <tr>
+    <td align="center" width="10%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
       <a href="">
         <img src="" width="250px" alt="">
       </a>
       <br>
       <em> </em>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="10%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em> </em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="10%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em> </em>
+    </td>
+    <td align="center" width="30%">
       <a href="">
         <img src="" width="250px" alt="">
       </a>
@@ -188,45 +430,5 @@ This yields a very high number of short diagonals, far surpassing the number of 
 
 ### Interval Results
 
-Given the diagonal breaks that would be commonly expected in this type of data (demonstrated in the group 5 and 6 similarity matrix example), relevant intervals can appear as several shorter diagonals with minor offsets.  So, discarding all short diagonals without further examination would compromise the overall recall despite the noise they add to the results. This is individually these short diagonals do not meet the minimum length requirement. However, he combination of these diagonals with others in the same region could certainly be relevant to find longer contiguous related intervals. This is left for future work. 
-
-
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em>Results with low min length settings: (insert settings and download link)
-</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em>Merged Groups Diagonal Length distribution</em>
-    </td>
-  </tr>
-    <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em> Results with low min length settings: (insert settings and download link)</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em>Merged Groups Diagonal Length distributio</em>
-    </td>
-  </tr>
-</table>
-
-- interval_overlap_ratio = 0.85
+We share 
 
