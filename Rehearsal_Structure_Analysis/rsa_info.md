@@ -2,7 +2,8 @@
 
 To support the manuscript, we share: 
 - 4 annotated file examples to demonstrate what is meant by equivalent fragments.
-- Analysis insights and results of applying the rehearsal structure analysis pipeline on 2 of the files. 
+- Analysis insights and results of applying the rehearsal structure analysis pipeline on 2 of the files.
+- Detailed walkthrough of the seach pipeline phases for 1 file.
 
 The full set of annotated files and additional analysis of unnanotated rehearsal files will be made available after publication. 
 
@@ -21,7 +22,7 @@ Annotations were made using logic pro.
 | File | Num Groups | Details |
 |-----------|-------|-------------|
 | Mozart Variations   | 2    |[Info and Results](./mozart_var_annotation_details.md)|
-|  Ponce20Can  |  6   |[Info and Results](./ponce_can_annotation_details.md)|
+|  Ponce20Can  |  6   |[Info and Results: Detailed Walkthrough](./ponce_can_annotation_details.md)|
 |  PonceGav  |  8   |[Info](./ponce_gav_annotation_details.md)|
 |  Warmup  |  8   |[Info](./warmup_file_annotation_details.md)|
 
