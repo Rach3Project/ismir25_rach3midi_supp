@@ -7,6 +7,8 @@
    - A notable feature is the presence of a long interval with a large number of short repetitions in a loop-like manner(around 8-10 bins each), as the player is practicing their technique (this interval can be seen in groups and 4).
    - Group 2 is the superset of groups 3, 4, 5, and 6. We do that in this example to specifically understand the effect of the aforementioned repetition loop on grouping the superset (group 2) and the subset (group 4) in question. 
    - Otherwise, there are several note mistakes and note repetitions (within windows of 1-5 notes until recovery from the mistake).
+
+It is a constructed example from a rehearsal of Gavota by Manuel Ponce.
   
 
 ### Visual Overview

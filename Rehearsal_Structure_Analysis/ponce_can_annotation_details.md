@@ -3,7 +3,8 @@
 - **Filename**: 2024-08-27_18-16_03_ponce_20Can-part2_annot.mid
 - **Download**: [MIDI](./annotated_files/2024-08-27_18-16_03_ponce_20Can/2024-08-27_18-16_03_ponce_20Can-part2_annot.mid)
 - **Groups**: 6
-- **Description**: A longer example of an intermediate level repertoire with some overlaps between groups (specifically, some groups are subsets of others). There are several note mistakes and note repetitions. The most challenging aspect are compositional variations between intervals of the same group, where the rh is the same but the lh is different. Furthermore, some groups have 2 related intervals only. 
+- **Description**: This is a longer example of an intermediate level repertoire with some overlaps between groups, where some groups are subsets of others. There are several note mistakes and note repetitions. The most challenging aspect are compositional variations between intervals of the same group, where the right hand is the same but the left hand is arranged differently. Furthermore, some groups have 2 related intervals only.
+It is constructed from a rehearsal of 20 Canciones (piezas faciles) by Manuel Ponce.
 
 #### Visual Overview
 
@@ -296,10 +297,12 @@ There are several things to note:
 - However, the short diagonals from these settings would allow some information pertaining to the first 3 groups to be passed to the next pipeline phases. 
 
 
-#### Grouping and Merging (and Resulting Intervals)
+#### Grouping and Merging Diagonals (and Resulting Intervals)
 As shown in the technical appendix, the found diagonals are grouped based on horizontal and vertical overlaps, followed by a final merging phase is simply to merge the horizontal and vertical groups based on overlapping diagonals. 
 
-When the number of resultant groups is small, 
+
+- How can we use this group information to check the results.
+
 
 
 <table>
@@ -332,6 +335,38 @@ When the number of resultant groups is small,
       <br>
       <em>Inverval Results</em>
     </td>
+    <tr>
+    <td align="center" width="20%">
+      <a href="">
+        <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em>minimum length: 10, similarity threshold: 0.2, 
+      gap tolerance: 4, 
+      interval overlap ratio: 0.8 </em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_medianlength.png" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_numdiags.png" width="250px" alt="">
+      </a>
+      <br>
+      <em> </em>
+    </td>
+    <td align="center" width="20%">
+      <a href="./annotated_files/2024-08-27_18-16_03_ponce_20Can/results/10_0-2_5_0.8.zip">
+        <em>Results</em>
+      </a>
+      <br>
+      <em></em>
+    </td>
+  </tr>
   </tr>
     <tr>
     <td align="center" width="20%">
@@ -372,38 +407,6 @@ When the number of resultant groups is small,
         <img src="" width="250px" alt="">
       </a>
       <br>
-      <em>minimum length: 10, similarity threshold: 0.2, 
-      gap tolerance: 4, 
-      interval overlap ratio: 0.8 </em>
-    </td>
-    <td align="center" width="30%">
-      <a href="">
-        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_medianlength.png" width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="30%">
-      <a href="">
-        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_numdiags.png" width="250px" alt="">
-      </a>
-      <br>
-      <em> </em>
-    </td>
-    <td align="center" width="20%">
-      <a href="./annotated_files/2024-08-27_18-16_03_ponce_20Can/results/10_0-2_5_0.8.zip">
-        <em>Results</em>
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="20%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
       <em></em>
     </td>
     <td align="center" width="30%">
@@ -430,15 +433,29 @@ When the number of resultant groups is small,
   </tr>
 </table>
 
-- How can we use this group information to check the results.
-- Which results set performs better on which group. 
+The group's output is provided as a separate midi file, with the group number as its name. The intervals of each group are provided as a midi note 24, with the span of the note indicating the duration of the interval.
+
+To view the results:
+- Load the annotated file in a DAW.
+- load the desired group/s as separate tracks.
+
+For the first set of parameters:
+
+- we check the top 5 median diagonal lengthed groups (15, 16, 21, 23 and 24)
+
+- Merging 15, 16, 23 and 24 would yield most of annotated group #4, although the suffix of the fragment is dropped from the retrievals. However, this suffix is retrieved as a group on its own (group 25 and group 6). This suggests the need for improved group merging, perhaps based on musical information rather than only through overlaps.
+
+- Group 21 is related to annotation group 6, but it is incomplete. 
+
+- we check groups 6, 9, 26, 27, as examples of groups that have many short diagonals. apart from 6, which would provide important information when coupled with other groups, the rest are all subsets of other returned groups. Whether they should be discarded or not depends on a user's desired output with respect to how such overlaps should be handled.
+
+- As expected, there are no retrievals with respect to the first 3 annotation groups.
+
 
 ### Conclusions:
 - The investigation of the pipeline steps on the annotated files has revealed several points of failure that can be addressed for future iterations.
 
 - Although (naturally) longer minimum length settings give better precision and lower recall, using high minimum length cutoffs discards useful information relating to short diagonals. Such short diagonals can be merged with other shorter diagonals or longer ones which within short bin windows before and after, to successfuly identify related intervals of varying lengths and with rehearsal type hesitations.
-
-- Furthermore, the intervals have merged some of the  'broken diagonals' demonstrated in the similarity matrixes of individual intervals and in the diagonal finding results was retrieved
 
 - Warping between the intervals of a group based on bin similarity is a classical solution to the 'broken diagonals' observation. While it could be used in future iterations, we were mostly interested computationally cheaper approaches to retrieve information from the whole rehearsal. 
 
