@@ -110,9 +110,9 @@ A closer look at the similarity matrixes between intervals of a group can demons
 
 ### Walkthrough of the Rehearsal Structure Analysis Pipeline
 
-#### Diagonal Finding (Step 1):
+#### Diagonal Finding:
 
-This phase is very important because these diagonals are the only information passed from the SSM onto the subsequent pipeline phases. For the diagonal finding approach to pick all necessary diagonals for further grouping and filtering, our initial hypothesis is that there needs to be a balance between the following tradeoffs:
+The diagonals found at this phase are the only information passed from the SSM onto the subsequent pipeline phases. For the diagonal finding approach to pick all necessary diagonals for further grouping and filtering, our initial hypothesis is that there needs to be a balance between the following tradeoffs:
 
 - Groups 1, 2, and 3 need shorter min_length settings
 - Groups 4, 5, and 6 could rely on longer minimum length settings, although shorter settings could also help in identifying the smaller shifted diagonals for later grouping.
@@ -296,14 +296,15 @@ There are several things to note:
 - However, the short diagonals from these settings would allow some information pertaining to the first 3 groups to be passed to the next pipeline phases. 
 
 
-### Grouping and Merging
+#### Grouping and Merging (and Resulting Intervals)
 As shown in the technical appendix, the found diagonals are grouped based on horizontal and vertical overlaps, followed by a final merging phase is simply to merge the horizontal and vertical groups based on overlapping diagonals. 
 
-Examples of diagonal length distributions based on multiple settings (interval_overlap_ratio = 0.85)
+When the number of resultant groups is small, 
+
 
 <table>
   <tr>
-    <td align="center" width="10%">
+    <td align="center" width="20%">
       <a href="">
         <img src="" width="250px" alt="">
       </a>
@@ -315,55 +316,90 @@ Examples of diagonal length distributions based on multiple settings (interval_o
         <img src="" width="250px" alt="">
       </a>
       <br>
-      <em>horizontal</em>
+      <em>Median Diag. Length/Group</em>
     </td>
     <td align="center" width="30%">
       <a href="">
         <img src="" width="250px" alt="">
       </a>
       <br>
-      <em>vertical </em>
+      <em>Diag. Count per Group</em>
     </td>
-    <td align="center" width="30%">
+    <td align="center" width="20%">
       <a href="">
         <img src="" width="250px" alt="">
       </a>
       <br>
-      <em>merged</em>
+      <em>Inverval Results</em>
     </td>
   </tr>
     <tr>
-    <td align="center" width="10%">
+    <td align="center" width="20%">
       <a href="">
         <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em> minimum length: 7,
+          similarity threshold: 0.15,
+          gap tolerance: 4, 
+          interval overlap ratio: 0.8
+          </em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="./figures/ponce_can/mergedgroups_7_0-15_4_medianlength.png" width="250px" alt="">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="30%">
       <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="30%">
-      <a href="">
-        <img src="" width="250px" alt="">
+        <img src="./figures/ponce_can/mergedgroups_7_0-15_4_num_diags.png" width="250px" alt="">
       </a>
       <br>
       <em> </em>
     </td>
-    <td align="center" width="30%">
+    <td align="center" width="20%">
+        <a href="./annotated_files/2024-08-27_18-16_03_ponce_20Can/results/7_0-15_4_0.8.zip">
+        <em>Results</em>
+      </a>
+      <br>      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="20%">
       <a href="">
         <img src="" width="250px" alt="">
+      </a>
+      <br>
+      <em>minimum length: 10, similarity threshold: 0.2, 
+      gap tolerance: 4, 
+      interval overlap ratio: 0.8 </em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_medianlength.png" width="250px" alt="">
+      </a>
+      <br>
+      <em></em>
+    </td>
+    <td align="center" width="30%">
+      <a href="">
+        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_numdiags.png" width="250px" alt="">
+      </a>
+      <br>
+      <em> </em>
+    </td>
+    <td align="center" width="20%">
+      <a href="./annotated_files/2024-08-27_18-16_03_ponce_20Can/results/10_0-2_5_0.8.zip">
+        <em>Results</em>
       </a>
       <br>
       <em></em>
     </td>
   </tr>
   <tr>
-    <td align="center" width="10%">
+    <td align="center" width="20%">
       <a href="">
         <img src="" width="250px" alt="">
       </a>
@@ -384,48 +420,32 @@ Examples of diagonal length distributions based on multiple settings (interval_o
       <br>
       <em> </em>
     </td>
-    <td align="center" width="30%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="10%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="30%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="30%">
+    <td align="center" width="20%">
       <a href="">
         <img src="" width="250px" alt="">
       </a>
       <br>
       <em> </em>
-    </td>
-    <td align="center" width="30%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em></em>
     </td>
   </tr>
 </table>
 
+- How can we use this group information to check the results.
+- Which results set performs better on which group. 
 
-### Interval Results
+### Conclusions:
+- The investigation of the pipeline steps on the annotated files has revealed several points of failure that can be addressed for future iterations.
 
-We share 
+- Although (naturally) longer minimum length settings give better precision and lower recall, using high minimum length cutoffs discards useful information relating to short diagonals. Such short diagonals can be merged with other shorter diagonals or longer ones which within short bin windows before and after, to successfuly identify related intervals of varying lengths and with rehearsal type hesitations.
+
+- Furthermore, the intervals have merged some of the  'broken diagonals' demonstrated in the similarity matrixes of individual intervals and in the diagonal finding results was retrieved
+
+- Warping between the intervals of a group based on bin similarity is a classical solution to the 'broken diagonals' observation. While it could be used in future iterations, we were mostly interested computationally cheaper approaches to retrieve information from the whole rehearsal. 
+
+- Additional post-processing by filtering the resulting groups could be useful especially when shorter minimum length settings are chosen.
+
+- Another suggestion is to separate between the minimum search length and the minimum length of a returned interval. This would balance between the inclusion of all necessary information during the grouping and merging phases, and the elimination of unnecessary intervals at the final step.
+
+
+- Finally, a larger annotated set (from the < Anonymized > MIDI dataset) with more rehearsal specific challenges would be needed to validate and evaluate the system.
 
