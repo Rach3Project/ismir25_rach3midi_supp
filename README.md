@@ -21,3 +21,5 @@ In addition, we provide the code that was used to preprocess and analyze the rec
 - For detailed information about the Fingerprinting and Rehearsal Structure Analysis algorithms, please refer to the [technical annex](./technical_annex.pdf)
 
 - For annotations and results of the Rehearsal Structure Analysis pipeline phases, please refer to the [Rehearsal Structure Analysis](./Rehearsal_Structure_Analysis/rsa_info.md) page of this repository.
+
+- The pieces in the dataset, please refer to the [List of Pieces](./List_of_pieces.md).
