@@ -13,14 +13,14 @@ Variations on "Ah vous dirai-je, Maman"
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="" width="250px" alt="">
+        <img src="" width="500px" alt="">
       </a>
       <br>
       <em>Group 1</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="" width="250px" alt="">
+        <img src="" width="500px" alt="">
       </a>
       <br>
       <em>Group2</em>
@@ -29,14 +29,14 @@ Variations on "Ah vous dirai-je, Maman"
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/mozart_var/mozart_var_group1.png"width="250px" alt="">
+        <img src="./figures/mozart_var/mozart_var_group1.png"width="500px" alt="">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/mozart_var/mozart_var_group2.png" width="250px" alt="">
+        <img src="./figures/mozart_var/mozart_var_group2.png" width="500px" alt="">
       </a>
       <br>
       <em></em>
@@ -45,14 +45,14 @@ Variations on "Ah vous dirai-je, Maman"
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="" width="250px" alt="">
+        <img src="" width="500px" alt="">
       </a>
       <br>
       <em>Between instances of group 1 there are no note order variations.</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="" width="250px" alt="">
+        <img src="" width="500px" alt="">
       </a>
       <br>
       <em>Between instances of group 2, there are note variations due to the execution of a trille towards the end of the fragment. The trille exists in the 2nd and 4th fragment instance.
