@@ -24,7 +24,7 @@ Annotations were made using logic pro.
 | Mozart Variations   | 2    |[Info and Results](./mozart_var_annotation_details.md)|
 |  Ponce20Can  |  6   |[Info and Results: Detailed Walkthrough](./ponce_can_annotation_details.md)|
 |  PonceGav  |  8   |[Info](./ponce_gav_annotation_details.md)|
-|  Warmup  |  8   |[Info](./warmup_file_annotation_details.md)|
+|  Warmup  |  5   |[Info](./warmup_file_annotation_details.md)|
 
 For each annotation file, a page is included with: 
 - pianoroll plots with the time intervals of the annotated groups marked.
