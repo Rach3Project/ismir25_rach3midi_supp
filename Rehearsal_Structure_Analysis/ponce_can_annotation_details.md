@@ -3,7 +3,7 @@
 - **Filename**: 2024-08-27_18-16_03_ponce_20Can-part2_annot.mid
 - **Download**: [MIDI](./annotated_files/2024-08-27_18-16_03_ponce_20Can/2024-08-27_18-16_03_ponce_20Can-part2_annot.mid)
 - **Groups**: 6
-- **Description**: A longer example of an intermediate level repertoire with some overlaps between groups. There are several note mistakes and note repetitions (within windows of 1-5 notes until recovery from the mistake), the most challenging aspect are compositional variations between intervals of the same group, where the rh is the same but the lh is different. Furthermore, some groups have 2 related intervals only. 
+- **Description**: A longer example of an intermediate level repertoire with some overlaps between groups (specifically, some groups are subsets of others). There are several note mistakes and note repetitions. The most challenging aspect are compositional variations between intervals of the same group, where the rh is the same but the lh is different. Furthermore, some groups have 2 related intervals only. 
 
 #### Visual Overview
 
@@ -58,21 +58,18 @@
   
 </table>
 
-### Challenges per group
+#### Challenges per group
 - Group 1: The intervals are around 7 bins long,
-  - so its first interval pair would be undetected, despite occuring as a diagonal without interruptions, it would only be detected with a lower minimum_length value.
+  - so despite occuring as a diagonal without interruptions, the group's first interval pair would be undetected unless the minimum_length value is set to be very low.
   - Its second interval pair would also not result in a diagonal due to the latter interval being a variation with a different left hand.
 
-- Group 2: intervals are variants, and usually one of the variants will include extra bins, resulting in the broken diagonal in the Similarity Matrix between the intervals.
+- Group 2: this group relates intervals that are based on variants. When this happens, then even in the case of no extra or missing notes, the intervals belonging to a variant will include a different number of bins than those of the other.
 
 - Group 3: challenges are similar to group 2
 
-- Group 4: The intervals are longer and they are not variants; the differences between them are due to rehearsal elements.
+- Groups 4, 5, and 6: The intervals are longer and they are not variants; the differences between them are due to rehearsal elements.
 
-- Groups 5 and 6 have similar traits as group 4. 
-
-### Similarity Matrixes of intra-group fragment pairs
-The tick indices reflect the bin numbers within the SSM of the whole rehearsal. 
+A closer look at the similarity matrixes between intervals of a group can demonstrate the above traits.
 
 <table>
   <tr>
@@ -109,9 +106,13 @@ The tick indices reflect the bin numbers within the SSM of the whole rehearsal.
   </tr>
 </table>
 
-#### Diagonal Finding:
+*The tick indices reflect the bin numbers within the SSM of the whole rehearsal.*
 
-For the diagonal finding approach to pick all necessary diagonals for further grouping and filtering, our initial hypothesis is that there needs to be a balance between the following tradeoffs:
+### Walkthrough of the Rehearsal Structure Analysis Pipeline
+
+#### Diagonal Finding (Step 1):
+
+This phase is very important because these diagonals are the only information passed from the SSM onto the subsequent pipeline phases. For the diagonal finding approach to pick all necessary diagonals for further grouping and filtering, our initial hypothesis is that there needs to be a balance between the following tradeoffs:
 
 - Groups 1, 2, and 3 need shorter min_length settings
 - Groups 4, 5, and 6 could rely on longer minimum length settings, although shorter settings could also help in identifying the smaller shifted diagonals for later grouping.
@@ -198,13 +199,9 @@ One way to understand the effectiveness of these settings is to see how the diag
     </td>
 </table>
 
-As the only information passed to the interval grouping and merging are the the diagonals found in this search, from the plots above we can see the following:
+From the plots above we can see the following:
 - As initially thought, this search does not yield enough diagonals in the intersecting boxes of the first 3 groups.
 - For the last 3 groups it would be possible to postprocess this search meaningfully, although the recall is also not perfect. 
-
-The diagonal breaks referred to in the zoomed-in similarity matrixes of intra group pairs can be seen for the last 3 groups. 
-
-However, as the only information passed to the interval grouping and merging are the the diagonals found in this search. 
 
 In contrast, we use different settings and observe their effect:
 
