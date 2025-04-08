@@ -7,53 +7,14 @@
    - No grouping of variations (similar to Annotation File 3).
 
 ### Visual Overview
+| Group 1 | Group 2 |
+|:-------:|:-------:|
+| [![group1](./figures/warmup/warmup_group1.png)](./figures/warmup/warmup_group1.png) | [![group2](./figures/warmup/warmup_group2.png)](./figures/warmup/warmup_group2.png) |
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href=>
-        <img src="./figures/warmup/warmup_group1.png" width="500px" alt="group1">
-      </a>
-      <br>
-      <em>Group 1</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/warmup/warmup_group2.png" width="500px" alt="group2">
-      </a>
-      <br>
-      <em>Group 2</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="">
-        <img src="./figures/warmup/warmup_group1.png" width="500px" alt="group3">
-      </a>
-      <br>
-      <em>Group 3</em>
-    </td>
-    <td align="center">
-      <a href="./figures/warmup/warmup_group4.png">
-        <img src="./figures/warmup/warmup_group4.png" width="500px" alt="Annotation Example 4">
-      </a>
-      <br>
-      <em>Group 4</em>
-  </tr>
-    <tr>
-    <td align="center" width="50%">
-      <a href=>
-        <img src="./figures/warmup/warmup_group5.png" width="500px" alt="group1">
-      </a>
-      <br>
-      <em>Group 5</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-</table>
+| Group 3 | Group 4 |
+|:-------:|:-------:|
+| [![group3](./figures/warmup/warmup_group1.png)](./figures/warmup/warmup_group1.png) | [![group4](./figures/warmup/warmup_group4.png)](./figures/warmup/warmup_group4.png) |
+
+| Group 5 |    |
+|:-------:|:-------:|
+| [![group5](./figures/warmup/warmup_group5.png)](./figures/warmup/warmup_group5.png) |    |
