@@ -104,6 +104,12 @@ A closer look at the similarity matrixes between intervals of a group can demons
   </tr>
 </table>
 
+Trying out figures outside of table:
+![Annotation Example 1](./figures/mozart_var/mozart_var_group1_intcomb1.png)
+![Annotation Example 2](./figures/mozart_var/mozart_var_group2_intcomb0.png)
+
+
+
 ### Walkthrough of the Rehearsal Structure Analysis Pipeline
 
 #### Diagonal Finding:
