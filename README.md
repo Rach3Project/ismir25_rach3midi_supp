@@ -23,3 +23,5 @@ In addition, we provide the code that was used to preprocess and analyze the rec
 - For annotations and results of the Rehearsal Structure Analysis pipeline phases, please refer to the [Rehearsal Structure Analysis](./Rehearsal_Structure_Analysis/rsa_info.md) page of this repository.
 
 - The pieces in the dataset, please refer to the [List of Pieces](./List_of_pieces.md).
+
+- A small sample of the dataset is available for download [here](./Sample_Dataset.zip).
