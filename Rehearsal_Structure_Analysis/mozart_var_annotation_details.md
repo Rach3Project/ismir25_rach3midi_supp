@@ -29,14 +29,14 @@ Variations on "Ah vous dirai-je, Maman"
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="Rehearsal_Structure_Analysis/figures/mozart_var/mozart_var_group1.png"width="500px" alt="">
+        <img src="./figures/mozart_var/mozart_var_group1.png"width="500px" alt="">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="Rehearsal_Structure_Analysis/figures/mozart_var/mozart_var_group2.png" width="500px" alt="">
+        <img src="./figures/mozart_var/mozart_var_group2.png" width="500px" alt="">
       </a>
       <br>
       <em></em>
@@ -72,15 +72,15 @@ A closer look at the similarity matrixes between intervals of a group can demons
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="Rehearsal_Structure_Analysis/figures/mozart_var/mozart_var_group1_intcomb1.png">
-        <img src="Rehearsal_Structure_Analysis/figures/mozart_var/mozart_var_group1_intcomb1.png" width="250px" alt="Annotation Example 1">
+      <a href="./figures/mozart_var/mozart_var_group1_intcomb1.png">
+        <img src="./figures/mozart_var/mozart_var_group1_intcomb1.png" width="250px" alt="Annotation Example 1">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="50%">
-      <a href="Rehearsal_Structure_Analysis/figures/mozart_var/mozart_var_group2_intcomb0.png">
-        <img src="Rehearsal_Structure_Analysis/figures/mozart_var/mozart_var_group2_intcomb0.png" width="250px" alt="Annotation Example 2">
+      <a href="./figures/mozart_var/mozart_var_group2_intcomb0.png">
+        <img src="./figures/mozart_var/mozart_var_group2_intcomb0.png" width="250px" alt="Annotation Example 2">
       </a>
       <br>
       <em>Annotation Example 2</em>
@@ -104,6 +104,12 @@ A closer look at the similarity matrixes between intervals of a group can demons
   </tr>
 </table>
 
+Trying out figures outside of table:
+![Annotation Example 1](./figures/mozart_var/mozart_var_group1_intcomb1.png)
+![Annotation Example 2](./figures/mozart_var/mozart_var_group2_intcomb0.png)
+
+
+
 ### Walkthrough of the Rehearsal Structure Analysis Pipeline
 
 #### Diagonal Finding:
@@ -115,7 +121,7 @@ The light blue lines indicate the diagonals found using:
 
 The green lines represent group2 intervals, which we show to demonstrate the aforementioned challenges of this group specifically and how it affects the results. The intersections of the green lines is where we would (ideally) want to find a diagonal.
 
-![preview](Rehearsal_Structure_Analysis/figures/mozart_var/mozart_var_diagonalsearch_group2annot_10_0-2_5.png)
+![preview](./figures/mozart_var/mozart_var_diagonalsearch_group2annot_10_0-2_5.png)
 
 
 - For group 0:
@@ -137,7 +143,7 @@ interval_overlap_ratio = 0.85
 
 The group's output is provided as a separate midi file, with the group number as its name. The intervals of each group are provided as a midi note 24, with the span of the note indicating the duration of the interval.
 
-[Download](Rehearsal_Structure_Analysis/annotated_files/02_2024-08-02_Mozart_Var/results/10_0-2_5.zip)
+[Download](./annotated_files/02_2024-08-02_Mozart_Var/results/10_0-2_5.zip)
 
 To view the results:
 - Load the annotated file in a DAW.
