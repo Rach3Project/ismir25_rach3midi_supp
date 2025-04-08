@@ -8,56 +8,17 @@ It is constructed from a rehearsal of 20 Canciones (piezas faciles) by Manuel Po
 
 #### Visual Overview
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group1.png" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group2.png" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group3.png"width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group4.png" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group5.png" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group6.png" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  
-</table>
+|Group 1 | Group 2|
+|:-------:|:-------:|
+| [![](./figures/ponce_can/ponce20can_group1.png)](./figures/ponce_can/ponce20can_group1.png) | [![](./figures/ponce_can/ponce20can_group2.png)](./figures/ponce_can/ponce20can_group2.png) |
+
+|Group 3| Group 4|
+|:-------:|:-------:|
+| [![](./figures/ponce_can/ponce20can_group3.png)](./figures/ponce_can/ponce20can_group3.png) | [![](./figures/ponce_can/ponce20can_group4.png)](./figures/ponce_can/ponce20can_group4.png) |
+
+|Group 5| Group 6|
+|:-------:|:-------:|
+| [![](./figures/ponce_can/ponce20can_group5.png)](./figures/ponce_can/ponce20can_group5.png) | [![](./figures/ponce_can/ponce20can_group6.png)](./figures/ponce_can/ponce20can_group6.png) |
 
 #### Challenges per group
 - Group 1: The intervals are around 7 bins long,
@@ -72,40 +33,11 @@ It is constructed from a rehearsal of 20 Canciones (piezas faciles) by Manuel Po
 
 A closer look at the similarity matrixes between intervals of a group can demonstrate the above traits.
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="./figures/ponce_can/ponce20can_group2_intcomb1.png">
-        <img src="./figures/ponce_can/ponce20can_group2_intcomb1.png" width="250px" alt="Annotation Example 1">
-      </a>
-      <br>
-      <em>Group 2 Example showing diagonal shifting due to compositional variations</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="./figures/ponce_can/ponce20can_group4_intcomb2.png">
-        <img src="./figures/ponce_can/ponce20can_group4_intcomb2.png" width="250px" alt="Annotation Example 2">
-      </a>
-      <br>
-      <em>Group 4 Example showing relatively long diagonals with some gaps and a shift towards the end</em>
-    </td>
-  </tr>
-    <tr>
-    <td align="center" width="50%">
-      <a href="./figures/ponce_can/ponce20can_group5_intcomb2.png">
-        <img src="./figures/ponce_can/ponce20can_group5_intcomb2.png" width="250px" alt="">
-      </a>
-      <br>
-      <em> Group 5 example</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_can/ponce20can_group6_intcomb1.png" width="250px" alt="">
-      </a>
-      <br>
-      <em>Group6 Example</em>
-    </td>
-  </tr>
-</table>
+| Group 2 Example showing diagonal shifting due to compositional variations | Group 4 Example showing relatively long diagonals with some gaps and a shift towards the end |
+|:-------:|:-------:|
+| [![](./figures/ponce_can/ponce20can_group2_intcomb1.png)](./figures/ponce_can/ponce20can_group2_intcomb1.png) | [![](./figures/ponce_can/ponce20can_group4_intcomb2.png)](./figures/ponce_can/ponce20can_group4_intcomb2.png) |
+| **Group 5 example** | **Group6 Example** |
+| [![](./figures/ponce_can/ponce20can_group5_intcomb2.png)](./figures/ponce_can/ponce20can_group5_intcomb2.png) | [![](./figures/ponce_can/ponce20can_group6_intcomb1.png)](./figures/ponce_can/ponce20can_group6_intcomb1.png) |
 
 *The tick indices reflect the bin numbers within the SSM of the whole rehearsal.*
 
