@@ -9,56 +9,10 @@ Variations on "Ah vous dirai-je, Maman"
 
 #### Visual Overview
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="500px" alt="">
-      </a>
-      <br>
-      <em>Group 1</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="500px" alt="">
-      </a>
-      <br>
-      <em>Group2</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/mozart_var/mozart_var_group1.png"width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/mozart_var/mozart_var_group2.png" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="500px" alt="">
-      </a>
-      <br>
-      <em>.</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="500px" alt="">
-      </a>
-      <br>
-      <em></em>
-    </td>
-  
-</table>
+| Group 1                                                                                     | Group 2                                                                                     |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| ![Group 1](./figures/mozart_var/mozart_var_group1.png)                                      | ![Group 2](./figures/mozart_var/mozart_var_group2.png)                                      |
+
 
 #### Info/Challenges per group
 - There are no note order variations between intervals of group 1.
@@ -69,44 +23,9 @@ A closer look at the similarity matrixes between intervals of a group can demons
 
 *The tick indexes reflect the bin numbers within the SSM of the whole rehearsal.*
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="./figures/mozart_var/mozart_var_group1_intcomb1.png">
-        <img src="./figures/mozart_var/mozart_var_group1_intcomb1.png" width="250px" alt="Annotation Example 1">
-      </a>
-      <br>
-      <em></em>
-    </td>
-    <td align="center" width="50%">
-      <a href="./figures/mozart_var/mozart_var_group2_intcomb0.png">
-        <img src="./figures/mozart_var/mozart_var_group2_intcomb0.png" width="250px" alt="Annotation Example 2">
-      </a>
-      <br>
-      <em>Annotation Example 2</em>
-    </td>
-  </tr>
-    <tr>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em>Group 1 Example: the consecutive bins maintain almost identical pitch information with the exception of a short break that does not result in an offset of the diagonal's continuation </em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="" width="250px" alt="">
-      </a>
-      <br>
-      <em>Group 2 Example: Fragment on the y-axis is executed with a trille. So, in addition to low similarity regions, the diagonal is offset by the number of extra notes </em>
-    </td>
-  </tr>
-</table>
-
-Trying out figures outside of table:
-![Annotation Example 1](./figures/mozart_var/mozart_var_group1_intcomb1.png)
-![Annotation Example 2](./figures/mozart_var/mozart_var_group2_intcomb0.png)
+| ![Annotation Example 1](./figures/mozart_var/mozart_var_group1_intcomb1.png) | ![Annotation Example 2](./figures/mozart_var/mozart_var_group2_intcomb0.png) |
+|:-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| *Group 1 Example: the consecutive bins maintain almost identical pitch information with the exception of a short break that does not result in an offset of the diagonal's continuation.* | *Group 2 Example: Fragment on the y-axis is executed with a trille. So, in addition to low similarity regions, the diagonal is offset by the number of extra notes.* |
 
 
 
