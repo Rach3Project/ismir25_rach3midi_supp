@@ -58,8 +58,8 @@ The light blue lines indicate the diagonals found using:
 <table>
   <tr>
     <td align="center" width="70%">
-      <a href=./figures/ponce_can/diagonalsearch_10_0-2_5.png">
-        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5.png" width="600 px" alt="Diagonal Search">
+      <a href=./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5.png">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5.png" width="600 px" alt="Diagonal Search">
       </a>
       <br>
       <em></em>
@@ -71,8 +71,8 @@ The light blue lines indicate the diagonals found using:
 <table>
   <tr>
     <td align="center" width="70%">
-      <a href="./figures/ponce_can/ponce20can_diagonaldist_10_0-2_5.png">
-        <img src="./figures/ponce_can/ponce20can_diagonaldist_10_0-2_5.png" width="400 px" alt="Diagonal Length Distribution">
+      <a href="./Rehearsal_Structure_Analysis/figures/ponce_can/ponce20can_diagonaldist_10_0-2_5.png">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/ponce20can_diagonaldist_10_0-2_5.png" width="400 px" alt="Diagonal Length Distribution">
       </a>
       <br>
       <em></em>
@@ -86,14 +86,14 @@ One way to understand the effectiveness of these settings is to see how the diag
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group1.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5_group1.png" width="450px" alt="">
       </a>
       <br>
       <em>Group 1</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group2.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5_group2.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 2</em>
@@ -102,14 +102,14 @@ One way to understand the effectiveness of these settings is to see how the diag
     <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group3.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5_group3.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 3</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group4.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5_group4.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 4</em>
@@ -118,14 +118,14 @@ One way to understand the effectiveness of these settings is to see how the diag
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group5.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5_group5.png" width="450px" alt="">
       </a>
       <br>
       <em>Group 5</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_10_0-2_5_group6.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_10_0-2_5_group6.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 6</em>
@@ -147,7 +147,7 @@ In contrast, we use different settings and observe their effect:
   <tr>
     <td align="center" width="70%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4.png" width="600 px" alt="Diagonal Length Distribution">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_7_0-15_4.png" width="600 px" alt="Diagonal Length Distribution">
       </a>
       <br>
       <em></em>
@@ -158,8 +158,8 @@ In contrast, we use different settings and observe their effect:
 <table>
   <tr>
     <td align="center" width="70%">
-      <a href="./figures/ponce_can/diagonaldist_7_0-15_4.png">
-        <img src="./figures/ponce_can/diagonaldist_7_0-15_4.png" width="400 px" alt="Diagonal Length Distribution">
+      <a href="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonaldist_7_0-15_4.png">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonaldist_7_0-15_4.png" width="400 px" alt="Diagonal Length Distribution">
       </a>
       <br>
       <em></em>
@@ -173,14 +173,14 @@ This is the observed effect on the groups
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group1.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_7_0-15_4_group1.png" width="450px" alt="">
       </a>
       <br>
       <em>Group 1</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group2.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_7_0-15_4_group2.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 2</em>
@@ -189,14 +189,14 @@ This is the observed effect on the groups
     <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group3.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_7_0-15_4_group3.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 3</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group4.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_7_0-15_4_group4.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 4</em>
@@ -205,14 +205,14 @@ This is the observed effect on the groups
   <tr>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group5.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_7_0-15_4_group5.png" width="450px" alt="">
       </a>
       <br>
       <em>Group 5</em>
     </td>
     <td align="center" width="50%">
       <a href="">
-        <img src="./figures/ponce_can/diagonalsearch_7_0-15_4_group6.png" width="450px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/diagonalsearch_7_0-15_4_group6.png" width="450px" alt="">
       </a>
       <br>
       <em> Group 6</em>
@@ -279,20 +279,20 @@ As shown in the technical appendix, the found diagonals are grouped based on hor
     </td>
     <td align="center" width="30%">
       <a href="">
-        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_medianlength.png" width="250px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/mergedgroups_10_0-2_5_medianlength.png" width="250px" alt="">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="30%">
       <a href="">
-        <img src="./figures/ponce_can/mergedgroups_10_0-2_5_numdiags.png" width="250px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/mergedgroups_10_0-2_5_numdiags.png" width="250px" alt="">
       </a>
       <br>
       <em> </em>
     </td>
     <td align="center" width="20%">
-      <a href="./annotated_files/2024-08-27_18-16_03_ponce_20Can/results/10_0-2_5_0.8.zip">
+      <a href="./Rehearsal_Structure_Analysis/annotated_files/2024-08-27_18-16_03_ponce_20Can/results/10_0-2_5_0.8.zip">
         <em>Results</em>
       </a>
       <br>
@@ -314,20 +314,20 @@ As shown in the technical appendix, the found diagonals are grouped based on hor
     </td>
     <td align="center" width="30%">
       <a href="">
-        <img src="./figures/ponce_can/mergedgroups_7_0-15_4_medianlength.png" width="250px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/mergedgroups_7_0-15_4_medianlength.png" width="250px" alt="">
       </a>
       <br>
       <em></em>
     </td>
     <td align="center" width="30%">
       <a href="">
-        <img src="./figures/ponce_can/mergedgroups_7_0-15_4_num_diags.png" width="250px" alt="">
+        <img src="./Rehearsal_Structure_Analysis/figures/ponce_can/mergedgroups_7_0-15_4_num_diags.png" width="250px" alt="">
       </a>
       <br>
       <em> </em>
     </td>
     <td align="center" width="20%">
-        <a href="./annotated_files/2024-08-27_18-16_03_ponce_20Can/results/7_0-15_4_0.8.zip">
+        <a href="./Rehearsal_Structure_Analysis/annotated_files/2024-08-27_18-16_03_ponce_20Can/results/7_0-15_4_0.8.zip">
         <em>Results</em>
       </a>
       <br>      <em></em>

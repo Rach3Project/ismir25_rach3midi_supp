@@ -13,67 +13,12 @@ It is a constructed example from a rehearsal of Gavota by Manuel Ponce.
 
 ### Visual Overview
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href=>
-        <img src="./figures/ponce_gav/ponce_gav_group1.png" width="500px" alt="group1">
-      </a>
-      <br>
-      <em>Annotation Example 1</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_gav/ponce_gav_group2.png" width="500px" alt="group2">
-      </a>
-      <br>
-      <em>Annotation Example 2</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="">
-        <img src="./figures/ponce_gav/ponce_gav_group3.png" width="500px" alt="group3">
-      </a>
-      <br>
-      <em>Annotation Example 3</em>
-    </td>
-    <td align="center">
-      <a href="./figures/ponce_gav/ponce_gav_group4.png">
-        <img src="./figures/ponce_gav/ponce_gav_group4.png" width="500px" alt="Annotation Example 4">
-      </a>
-      <br>
-      <em>Annotation Example 4</em>
-  </tr>
-    <tr>
-    <td align="center" width="50%">
-      <a href=>
-        <img src="./figures/ponce_gav/ponce_gav_group5.png" width="500px" alt="group1">
-      </a>
-      <br>
-      <em>Annotation Example 5</em>
-    </td>
-    <td align="center" width="50%">
-      <a href="">
-        <img src="./figures/ponce_gav/ponce_gav_group6.png" width="500px" alt="group2">
-      </a>
-      <br>
-      <em>Annotation Example 6</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="">
-        <img src="./figures/ponce_gav/ponce_gav_group7.png" width="500px" alt="group3">
-      </a>
-      <br>
-      <em>Annotation Example 7</em>
-    </td>
-    <td align="center">
-      <a href="./figures/ponce_gav/ponce_gav_group8.png">
-        <img src="./figures/ponce_gav/ponce_gav_group8.png" width="500px" alt="Annotation Example 8">
-      </a>
-      <br>
-      <em>Annotation Example 8</em>
-  </tr>
-</table>
+| Group 1 | Group 2 |
+|:-------:|:-------:|
+| [![group1](./figures/ponce_gav/ponce_gav_group1.png)](./figures/ponce_gav/ponce_gav_group1.png) | [![group2](./figures/ponce_gav/ponce_gav_group2.png)](./figures/ponce_gav/ponce_gav_group2.png) |
+| **Group 3** | **Group 4** |
+| [![group3](./figures/ponce_gav/ponce_gav_group3.png)](./figures/ponce_gav/ponce_gav_group3.png) | [![group4](./figures/ponce_gav/ponce_gav_group4.png)](./figures/ponce_gav/ponce_gav_group4.png) |
+| **Group 5** | **Group 6** |
+| [![group5](./figures/ponce_gav/ponce_gav_group5.png)](./figures/ponce_gav/ponce_gav_group5.png) | [![group6](./figures/ponce_gav/ponce_gav_group6.png)](./figures/ponce_gav/ponce_gav_group6.png) |
+| **Group 7** | **Group 8** |
+| [![group7](./figures/ponce_gav/ponce_gav_group7.png)](./figures/ponce_gav/ponce_gav_group7.png) | [![group8](./figures/ponce_gav/ponce_gav_group8.png)](./figures/ponce_gav/ponce_gav_group8.png) |
