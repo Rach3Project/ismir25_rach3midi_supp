@@ -1,4 +1,4 @@
-# Supplementary Materials for  "Enabling Empirical Analysis of Piano Performance Rehearsal with the *Anonymized* MIDI Dataset".
+# Supplementary Materials for the paper "Enabling Empirical Analysis of Piano Performance Rehearsal with the Rach3 MIDI Dataset" accepted at ISMIR 2025.
 
 ## Abstract
 
@@ -8,7 +8,7 @@ The study of piano rehearsals can offer interesting insights into the strategies
 Studying the process of rehearsal requires computational methods that differ from those used for piano performance, due to challenges like mistakes, repetitions of musical segments, or forward and backward skips to sections in the piece.
 The scarcity of publicly available rehearsal data limits the empirical understanding of these challenges. 
 
-We release the *Anonymized* MIDI Dataset, an openly available collection of MIDI files containing more than 750 hours of recordings of piano rehearsals by four pianists (3 advanced, 1 beginner), collected over a period of more than 4 years. 
+We release the Rach3 MIDI Dataset, an openly available collection of MIDI files containing more than 750 hours of recordings of piano rehearsals by four pianists (3 advanced, 1 beginner), collected over a period of more than 4 years. 
 This dataset records the progression of pianists learning new repertoire, as well as practicing familiar pieces, all in the Western Classical tradition.
 
 This paper further introduces possible avenues of using this dataset for the computational analysis of piano practice such as rehearsal structure analysis, rehearsal-to-score alignment and mistake identification.
